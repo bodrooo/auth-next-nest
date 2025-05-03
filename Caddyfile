@@ -1,0 +1,7 @@
+arch.local {
+  reverse_proxy localhost:3000
+}
+
+api.arch.local {
+  reverse_proxy localhost:8000
+}

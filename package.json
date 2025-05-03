@@ -1,0 +1,14 @@
+{
+  "name": "auth-next-nest",
+  "packageManager": "yarn@4.9.1",
+  "private": true,
+  "workspaces": [
+    "front-end",
+    "back-end"
+  ],
+  "scripts": {
+    "dev": "yarn workspace front-end dev & yarn workspace back-end start:dev ",
+    "caddy:start": "sudo caddy run --config ./Caddyfile",
+    "install:all": "yarn install"
+  }
+}
