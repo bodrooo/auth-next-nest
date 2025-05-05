@@ -900,6 +900,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@heroui/card@npm:^2.2.18":
+  version: 2.2.18
+  resolution: "@heroui/card@npm:2.2.18"
+  dependencies:
+    "@heroui/react-utils": "npm:2.1.10"
+    "@heroui/ripple": "npm:2.2.14"
+    "@heroui/shared-utils": "npm:2.1.9"
+    "@heroui/use-aria-button": "npm:2.2.13"
+    "@react-aria/button": "npm:3.13.0"
+    "@react-aria/focus": "npm:3.20.2"
+    "@react-aria/interactions": "npm:3.25.0"
+    "@react-aria/utils": "npm:3.28.2"
+    "@react-types/shared": "npm:3.29.0"
+  peerDependencies:
+    "@heroui/system": ">=2.4.7"
+    "@heroui/theme": ">=2.4.6"
+    framer-motion: ">=11.5.6 || >=12.0.0-alpha.1"
+    react: ">=18 || >=19.0.0-rc.0"
+    react-dom: ">=18 || >=19.0.0-rc.0"
+  checksum: 10c0/a4371beae378eb1d953d9fdeb86b74ff4f0bdda07172f125302a882cc559fc6e29fe3175ce990d90b268e1ea3a7ff2a8bb9603833c94dec91ecd2b4bfa96bfeb
+  languageName: node
+  linkType: hard
+
 "@heroui/checkbox@npm:2.3.19-beta.1":
   version: 2.3.19-beta.1
   resolution: "@heroui/checkbox@npm:2.3.19-beta.1"
@@ -1535,6 +1558,23 @@ __metadata:
     react: ">=18 || >=19.0.0-rc.0"
     react-dom: ">=18 || >=19.0.0-rc.0"
   checksum: 10c0/280f947768aa4a5e8076629dc5d0163501819a189a905ddf5b9769c54451a02b2d0b62ff58f9989cb5ea0dda8df160875579e30cc2ae94bfdcbd84daffc9c0c5
+  languageName: node
+  linkType: hard
+
+"@heroui/ripple@npm:2.2.14":
+  version: 2.2.14
+  resolution: "@heroui/ripple@npm:2.2.14"
+  dependencies:
+    "@heroui/dom-animation": "npm:2.1.8"
+    "@heroui/react-utils": "npm:2.1.10"
+    "@heroui/shared-utils": "npm:2.1.9"
+  peerDependencies:
+    "@heroui/system": ">=2.4.7"
+    "@heroui/theme": ">=2.4.6"
+    framer-motion: ">=11.5.6 || >=12.0.0-alpha.1"
+    react: ">=18 || >=19.0.0-rc.0"
+    react-dom: ">=18 || >=19.0.0-rc.0"
+  checksum: 10c0/0cc48c88cd4a6f5806237444cefb13458a24f71cffd344e1aaf288c3096844a04a38b0a93361c5c38ed8806e9f0a04a479b2e053d46e9c66e4fde6e353f0dd95
   languageName: node
   linkType: hard
 
@@ -7952,6 +7992,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "front-end@workspace:front-end"
   dependencies:
+    "@heroui/card": "npm:^2.2.18"
     "@heroui/react": "npm:^2.8.0-beta.4"
     "@tailwindcss/postcss": "npm:^4"
     "@types/node": "npm:^20"
@@ -7961,7 +8002,7 @@ __metadata:
     next: "npm:15.3.1"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-    react-hook-form: "npm:^7.56.1"
+    react-hook-form: "npm:^7.56.2"
     tailwindcss: "npm:^4"
     typescript: "npm:^5"
   languageName: unknown
@@ -10534,12 +10575,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hook-form@npm:^7.56.1":
-  version: 7.56.1
-  resolution: "react-hook-form@npm:7.56.1"
+"react-hook-form@npm:^7.56.2":
+  version: 7.56.2
+  resolution: "react-hook-form@npm:7.56.2"
   peerDependencies:
     react: ^16.8.0 || ^17 || ^18 || ^19
-  checksum: 10c0/26eafd54bf47167628e34c2f22ea27ea7bdd5b4231a56af5be31ccedfb2a721708b308026ea4a17f2fb15c7b5fff83c0feb4acc7aa07bd6faa8506e917810cab
+  checksum: 10c0/9eeca7525c5c0b1356670e7cc77687298c7280a31c99bca396596124371467c310cad22f2c10efd9c75b4570d07740ee1c6ad481d59c1b725c7600767f0a35af
   languageName: node
   linkType: hard
 

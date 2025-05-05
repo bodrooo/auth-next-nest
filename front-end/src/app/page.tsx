@@ -1,3 +1,9 @@
+import { Login } from "./_comp/login-wrap";
+
 export default function Home() {
-  return <h1>TEst 12312</h1>;
+  return (
+    <main className="flex justify-center items-center h-dvh ">
+      <Login />
+    </main>
+  );
 }
