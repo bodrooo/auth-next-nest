@@ -1,3 +1,4 @@
 import appConfig from './app.config';
+import jwtConfig from './jwt.config';
 
-export default [appConfig];
+export default [appConfig, jwtConfig];
