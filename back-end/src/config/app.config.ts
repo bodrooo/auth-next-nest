@@ -2,8 +2,8 @@ import { IsString, IsEnum } from 'class-validator';
 import { registerConfig } from './util/config-register';
 
 export enum EnvironmentEnum {
-  production,
-  development,
+  production = 'production',
+  development = 'development',
 }
 
 export class AppConfig {
