@@ -4,6 +4,7 @@ import { CommonModule } from './common/common.module';
 import { ConfigModule } from '@nestjs/config';
 import config from './config';
 import { HttpLoggerMiddleware } from './logger/middleware/http-request.middleware';
+import { FeatureModule } from './feature/feature.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { HttpLoggerMiddleware } from './logger/middleware/http-request.middlewar
     }),
     LoggerModule,
     CommonModule,
+    FeatureModule,
   ],
   controllers: [],
   providers: [],
