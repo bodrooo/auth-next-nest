@@ -13,9 +13,13 @@ export class AppConfig {
 
   @IsString()
   APP_NAME: string;
+
+  @IsString()
+  CORS_ORIGIN: string;
 }
 
 export default registerConfig('app', AppConfig, ({ env }) => ({
   env: env.NODE_ENV,
   appName: env.APP_NAME,
+  corsOrigin: env.CORS_ORIGIN.split('|'),
 }));
