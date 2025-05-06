@@ -16,6 +16,6 @@ export class AppConfig {
 }
 
 export default registerConfig('app', AppConfig, ({ env }) => ({
-  nodeEnv: env.NODE_ENV,
+  env: env.NODE_ENV,
   appName: env.APP_NAME,
 }));
