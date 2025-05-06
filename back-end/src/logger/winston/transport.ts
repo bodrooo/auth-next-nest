@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { HelperService } from 'src/common/service/helper.service';
 import * as winston from 'winston';
 import * as DailyRotateFile from 'winston-daily-rotate-file';
 
@@ -10,12 +11,14 @@ export class WinstonTransport {
   FILE: winston.transport;
   TRANSPORT: winston.transport[] = [];
 
-  constructor() {
+  constructor(private helper: HelperService) {
     this.buildConsole();
-    this.buildDailyRotateFile();
-
     this.TRANSPORT.push(this.CONSOLE);
-    this.TRANSPORT.push(this.FILE);
+
+    if (helper.isProd()) {
+      this.buildDailyRotateFile();
+      this.TRANSPORT.push(this.FILE);
+    }
   }
 
   private buildConsole() {
