@@ -1,4 +1,7 @@
 {
+  "dependencies": {
+    "@nestjs/mapped-types": "*"
+  },
   "name": "auth-next-nest",
   "packageManager": "yarn@4.9.1",
   "private": true,
